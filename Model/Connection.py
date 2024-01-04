@@ -2,7 +2,7 @@ import sqlite3
 
 
 class Connection:
-    def __init__(self, name_db='armando.db'):
+    def __init__(self, name_db='music.db'):
         self.name_db = name_db
         pass
 
