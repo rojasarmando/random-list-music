@@ -1,6 +1,25 @@
 import os
 import sys
+from tkinter import Tk
 from Model.Song import Song
+from Views.search_folder import SearchFolder
+
+
+
+root = Tk()
+
+opts= {
+    'title' : 'Convertir Canciones 2'
+}
+
+searchFolder = SearchFolder(root , opts)
+
+searchFolder.execute_view()
+
+root.mainloop()
+
+
+
 
 path = ''
 option = ''
