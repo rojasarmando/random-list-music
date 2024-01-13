@@ -2,3 +2,4 @@ random-list-v2.iml
 .idea/
 __pycache__
 *.db
+env/
