@@ -1,17 +1,9 @@
-
-
 from tkinter import filedialog
-
-def getFolderPath(folderPath):
-    folder_selected = filedialog.askdirectory()
-    folderPath.set(folder_selected)
-    
-
 
 def screen(root, title):
     
-    width = 300  # Width
-    height = 100  # Height
+    width = 700  # Width
+    height = 200  # Height
 
     screen_width = root.winfo_screenwidth()  # Width of the screen
     screen_height = root.winfo_screenheight()  # Height of the screen
