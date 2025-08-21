@@ -29,7 +29,7 @@ class Song(Connection):
         return data
 
     def search_by_name(self, name):
-        data = self.execute("SELECT * FROM SONGS WHERE NAME = '{}'".format(name))
+        data = self.execute("SELECT * FROM SONGS WHERE NAME = '{}'  ".format(name))
         return data
 
     def create_alias(self, name):

@@ -1,0 +1,23 @@
+<section id="vista-ruta" class="card bg-white rounded-2xl shadow-soft p-6 hidden">
+  <div class="flex items-center justify-between mb-4">
+    <h2 class="text-lg font-semibold">Ruta Fija</h2>
+  </div>
+
+  <p class="text-sm text-gray-600 mb-4">
+    Guarda una ruta local del sistema operativo para usarla en otras acciones (p. ej. carpeta base de trabajo).
+    <br><span class="text-xs text-gray-500">Ejemplos: <code>C:\Users\tu_usuario\Music</code> (Windows) · <code>/home/tu_usuario/Music</code> (Linux) · <code>/Users/tu_usuario/Music</code> (macOS)</span>
+  </p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-4 gap-3">
+    <input id="fixed-path" type="text" class="sm:col-span-3 rounded-xl border border-gray-200 p-3 outline-none focus:ring-2 focus:ring-gray-900" placeholder="Escribe aquí la ruta absoluta" />
+    <button id="btn-guardar-ruta" class="px-4 py-2 rounded-xl bg-gray-900 text-white hover:opacity-90">Guardar</button>
+  </div>
+
+  <div class="mt-4 flex items-center gap-3">
+    <span id="estado-ruta" class="text-sm text-gray-500"></span>
+    <button id="btn-borrar-ruta" class="px-3 py-1.5 text-sm rounded-lg border border-gray-200 hover:bg-gray-50">Borrar</button>
+  </div>
+</section>
+
+<!-- Script ESPECÍFICO de Ruta Fija -->
+<script type="module" src="{{ url_for('static', path='/js/components/ruta.js') }}"></script>

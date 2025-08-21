@@ -1,0 +1,27 @@
+<section id="vista-youtube" class="card bg-white rounded-2xl shadow-soft p-6 hidden">
+  <h2 class="text-lg font-semibold mb-4">YouTube</h2>
+  <p class="text-sm text-gray-600 mb-4">
+    Ingresa un <strong>enlace</strong> de YouTube (video, playlist, canal) <em>o</em> un <strong>término de búsqueda</strong>. 
+    Se listarán los videos y podrás <strong>guardar</strong> título + URL (sin parámetros de playlist) en tu Lista de Deseos.
+  </p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-5 gap-3">
+    <input id="yt-query" type="text" class="sm:col-span-4 rounded-xl border border-gray-200 p-3 outline-none focus:ring-2 focus:ring-gray-900" placeholder="https://www.youtube.com/watch?v=...  |  https://www.youtube.com/playlist?list=...  |  'daft punk one more time'"/>
+    <button id="yt-btn-listar" class="px-4 py-2 rounded-xl bg-gray-900 text-white hover:opacity-90">Listar</button>
+  </div>
+
+  <div class="mt-4 flex items-center gap-3">
+    <span id="yt-estado" class="text-sm text-gray-500"></span>
+    <button id="yt-guardar-seleccion" class="px-3 py-2 rounded-xl border border-gray-200 hover:bg-gray-50">Guardar selección</button>
+  </div>
+
+  <div id="yt-panel" class="mt-6 hidden">
+    <div id="yt-summary" class="text-sm text-gray-600 mb-2"></div>
+    <ul id="yt-list" class="divide-y divide-gray-100 rounded-xl border border-gray-200 overflow-hidden max-h-96 overflow-auto"></ul>
+  </div>
+
+  <pre id="yt-log" class="mt-4 bg-gray-50 border border-gray-200 rounded-xl p-3 text-xs overflow-auto"></pre>
+</section>
+
+<!-- Script específico -->
+<script type="module" src="{{ url_for('static', path='/js/components/youtube.js') }}"></script>

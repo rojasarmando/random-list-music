@@ -3,13 +3,16 @@
     <div class="flex h-14 items-center justify-between">
       <a href="#" class="font-semibold tracking-tight">🎵 Random List Music</a>
       <ul class="flex items-center gap-1">
-        <li><button data-target="vista-deseos" class="nav-btn px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 aria-[current=page]:bg-gray-900 aria-[current=page]:text-white" aria-current="page">Lista de Deseos</button></li>
+        <li><button data-target="vista-deseos" class="nav-btn px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 aria-[current=page]:bg-gray-900 aria-[current=page]:text-white" aria-current="page">Listado</button></li>
         <li><button data-target="vista-descargar" class="nav-btn px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 aria-[current=page]:bg-gray-900 aria-[current=page]:text-white">Descargar</button></li>
         <li><button data-target="vista-mezclar" class="nav-btn px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 aria-[current=page]:bg-gray-900 aria-[current=page]:text-white">Mezclar</button></li>
+        <li><button data-target="vista-ruta" class="nav-btn px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 aria-[current=page]:bg-gray-900 aria-[current=page]:text-white">Ruta</button></li>
+         <li><button data-target="vista-youtube" class="nav-btn px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 aria-[current=page]:bg-gray-900 aria-[current=page]:text-white">Buscar</button></li>
       </ul>
     </div>
   </nav>
 </header>
+
 
 <!-- Script ESPECÍFICO del navbar -->
 <script type="module" src="{{ url_for('static', path='/js/components/navbar.js') }}"></script>

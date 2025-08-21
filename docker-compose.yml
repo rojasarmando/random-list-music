@@ -7,6 +7,7 @@ services:
       PYTHONUNBUFFERED: "1"
     volumes:
       - ./:/app
+      - /home/rojasarmando/Música/sistema:/music
     ports:
        - "8000:8000"
     restart: "no"
