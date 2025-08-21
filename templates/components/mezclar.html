@@ -1,0 +1,21 @@
+<section id="vista-mezclar" class="card bg-white rounded-2xl shadow-soft p-6 hidden">
+  <h2 class="text-lg font-semibold mb-4">Mezclar</h2>
+  <p class="text-sm text-gray-600 mb-4">
+    Selecciona una carpeta y el modo de procesamiento para iniciar la mezcla con tu backend (por ejemplo, FastAPI <code>/process</code>).
+  </p>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+    <input id="ruta-mezcla" type="text" class="sm:col-span-2 rounded-xl border border-gray-200 p-3 outline-none focus:ring-2 focus:ring-gray-900" placeholder="/ruta/a/tu/carpeta" />
+    <select id="modo-mezcla" class="rounded-xl border border-gray-200 p-3 outline-none focus:ring-2 focus:ring-gray-900">
+      <option value="mix">mix</option>
+      <option value="original">original</option>
+    </select>
+  </div>
+  <div class="mt-4 flex items-center gap-3">
+    <button id="btn-mezclar" class="px-4 py-2 rounded-xl bg-gray-900 text-white hover:opacity-90">Iniciar mezcla</button>
+    <span id="estado-mezcla" class="text-sm text-gray-500"></span>
+  </div>
+  <pre id="log-mezcla" class="mt-4 bg-gray-50 border border-gray-200 rounded-xl p-3 text-xs overflow-auto"></pre>
+</section>
+
+<!-- Script ESPECÍFICO de mezclar -->
+<script type="module" src="{{ url_for('static', path='/js/components/mezclar.js') }}"></script>

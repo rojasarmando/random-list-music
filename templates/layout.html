@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es" class="h-full">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}Random List Music{% endblock %}</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { boxShadow: { soft: '0 10px 25px -10px rgba(0,0,0,0.25)' } } }
+    }
+  </script>
+</head>
+<body class="min-h-full bg-gray-50 text-gray-900">
+  {% include "components/navbar.html" %}
+
+  <main class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="border-t">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-6 text-sm text-gray-500">
+      © <span id="year"></span> Random List Music
+    </div>
+  </footer>
+
+  <!-- JS global compartido -->
+  <script type="module" src="{{ url_for('static', path='/js/common.js') }}"></script>
+
+  {% block scripts %}{% endblock %}
+</body>
+</html>

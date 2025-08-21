@@ -1,0 +1,47 @@
+<section id="vista-deseos" class="card bg-white rounded-2xl shadow-soft p-6">
+  <div class="flex items-center justify-between mb-4">
+    <h2 class="text-lg font-semibold">Lista de Deseos</h2>
+    <button id="btn-abrir-modal" class="px-3 py-2 rounded-xl bg-gray-900 text-white hover:opacity-90">
+      + Agregar
+    </button>
+  </div>
+
+  <p class="text-sm text-gray-600 mb-4">
+    Agrega canciones que te gustaría mezclar o descargar. Se guardan localmente en tu navegador.
+  </p>
+
+  <!-- Listado -->
+  <div id="wishlist-empty" class="text-sm text-gray-500 border border-dashed rounded-xl p-4 hidden">
+    Aún no tienes canciones en tu lista. ¡Agrega la primera! 🎵
+  </div>
+  <ul id="wishlist-list" class="divide-y divide-gray-100 rounded-xl border border-gray-200 overflow-hidden"></ul>
+
+  <!-- Modal -->
+  <div id="modal-backdrop" class="hidden fixed inset-0 z-50 bg-black/40"></div>
+  <div id="modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div class="w-full max-w-lg bg-white rounded-2xl shadow-2xl">
+      <div class="flex items-center justify-between p-4 border-b">
+        <h3 class="font-semibold">Agregar a Lista de Deseos</h3>
+        <button id="btn-cerrar-modal" class="p-2 rounded-lg hover:bg-gray-100" aria-label="Cerrar">✕</button>
+      </div>
+      <form id="form-deseo" class="p-4 space-y-4">
+        <div>
+          <label for="song-title" class="block text-sm font-medium mb-1">Nombre de la canción</label>
+          <input id="song-title" type="text" class="w-full rounded-xl border border-gray-200 p-3 outline-none focus:ring-2 focus:ring-gray-900" placeholder="Ej: Daft Punk - One More Time" required />
+        </div>
+        <div>
+          <label for="song-url" class="block text-sm font-medium mb-1">Enlace de YouTube</label>
+          <input id="song-url" type="url" class="w-full rounded-xl border border-gray-200 p-3 outline-none focus:ring-2 focus:ring-gray-900" placeholder="https://www.youtube.com/watch?v=..." required />
+          <p class="text-xs text-gray-500 mt-1">Puedes pegar la URL completa o solo el ID del video.</p>
+        </div>
+        <div class="flex items-center justify-end gap-3 pt-2">
+          <button type="button" id="btn-cancelar" class="px-4 py-2 rounded-xl border border-gray-200 hover:bg-gray-50">Cancelar</button>
+          <button type="submit" class="px-4 py-2 rounded-xl bg-gray-900 text-white hover:opacity-90">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Script ESPECÍFICO de deseos -->
+<script type="module" src="{{ url_for('static', path='/js/components/deseos.js') }}"></script>

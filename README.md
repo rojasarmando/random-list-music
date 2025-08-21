@@ -82,14 +82,14 @@ There is no official description beyond the execution command.([GitHub][1])
 
 To get a local copy up and running:
 
-```sh
+```bash
 git clone https://github.com/rojasarmando/random-list-music.git
 ```
 
 Then, run the script:
 
-```sh
-python main.py
+```bash
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 *(Make sure you use the correct version of Python installed on your system.)*

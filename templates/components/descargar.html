@@ -1,0 +1,37 @@
+<section id="vista-descargar" class="card bg-white rounded-2xl shadow-soft p-6 hidden">
+  <div class="flex items-center justify-between mb-4">
+    <h2 class="text-lg font-semibold">Descargar</h2>
+    <div class="flex items-center gap-2">
+      <button id="btn-refrescar-deseos" class="px-3 py-2 rounded-xl border border-gray-200 hover:bg-gray-50">
+        Refrescar lista
+      </button>
+      <button id="btn-descargar-seleccion" class="px-3 py-2 rounded-xl bg-gray-900 text-white hover:opacity-90">
+        Descargar selección
+      </button>
+    </div>
+  </div>
+
+  <p class="text-sm text-gray-600 mb-4">
+    Selecciona de tu Lista de Deseos y descarga el audio en formato MP3 desde YouTube.
+  </p>
+
+  <!-- Listado de deseos para descargar -->
+  <div id="dl-empty" class="text-sm text-gray-500 border border-dashed rounded-xl p-4 hidden">
+    No hay elementos en tu Lista de Deseos. Agrega canciones en la pestaña “Lista de Deseos”. 🎵
+  </div>
+
+  <div id="dl-wrapper" class="rounded-xl border border-gray-200 overflow-hidden hidden">
+    <div class="flex items-center gap-3 p-3 border-b bg-gray-50">
+      <label class="inline-flex items-center gap-2 text-sm">
+        <input id="dl-toggle-all" type="checkbox" class="rounded" />
+        Seleccionar todo
+      </label>
+    </div>
+    <ul id="dl-list" class="divide-y divide-gray-100"></ul>
+  </div>
+
+  <pre id="log-descarga" class="mt-4 bg-gray-50 border border-gray-200 rounded-xl p-3 text-xs overflow-auto"></pre>
+</section>
+
+<!-- Script ESPECÍFICO de descargar -->
+<script type="module" src="{{ url_for('static', path='/js/components/descargar.js') }}"></script>
