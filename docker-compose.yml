@@ -1,0 +1,12 @@
+services:
+  random-list-music:
+    build: .
+    environment:
+      PYTHONUNBUFFERED: "1"
+    volumes:
+      - ./:/app
+   
+    command: ["python", "-u", "main.py"]
+    ports:
+       - "8000:8000"
+    restart: "no"

@@ -2,10 +2,10 @@
 
 <!-- PROJECT SHIELDS -->
 
-\[!\[Stars]\[stars-shield]]\[stars-url]
-\[!\[Forks]\[forks-shield]]\[forks-url]
-\[!\[Watchers]\[watchers-shield]]\[watchers-url]
-\[!\[License]\[license-shield]]\[license-url]
+[![Stars][stars-shield]][stars-url]
+[![Forks][forks-shield]][forks-url]
+[![Watchers][watchers-shield]][watchers-url]
+[![License][license-shield]][license-url]
 
 <br />
 <div align="center">
