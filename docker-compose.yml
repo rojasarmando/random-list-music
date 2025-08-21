@@ -1,12 +1,15 @@
 services:
   random-list-music:
     build: .
+    container_name: random-list-music-container
+    image: random-list-music-image:latest 
     environment:
       PYTHONUNBUFFERED: "1"
     volumes:
       - ./:/app
-   
-    command: ["python", "-u", "main.py"]
     ports:
        - "8000:8000"
     restart: "no"
+    command: ["/bin/bash"]
+    tty: true
+    stdin_open: true

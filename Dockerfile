@@ -16,4 +16,4 @@ RUN if [ -f requirements.txt ]; then \
     fi
 
 
-CMD ["python", "-u", "main.py"]
+CMD ["/bin/bash"]

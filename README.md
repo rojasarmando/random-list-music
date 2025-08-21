@@ -2,10 +2,15 @@
 
 <!-- PROJECT SHIELDS -->
 
-[![Stars][stars-shield]][stars-url]
-[![Forks][forks-shield]][forks-url]
-[![Watchers][watchers-shield]][watchers-url]
-[![License][license-shield]][license-url]
+[stars-shield]: https://img.shields.io/github/stars/rojasarmando/random-list-music.svg?style=for-the-badge
+[stars-url]: https://github.com/rojasarmando/random-list-music/stargazers
+[forks-shield]: https://img.shields.io/github/forks/rojasarmando/random-list-music.svg?style=for-the-badge
+[forks-url]: https://github.com/rojasarmando/random-list-music/network/members
+[watchers-shield]: https://img.shields.io/github/watchers/rojasarmando/random-list-music.svg?style=for-the-badge
+[watchers-url]: https://github.com/rojasarmando/random-list-music/watchers
+[license-shield]: https://img.shields.io/github/license/rojasarmando/random-list-music.svg?style=for-the-badge
+[license-url]: https://github.com/rojasarmando/random-list-music/blob/master/LICENSE
+
 
 <br />
 <div align="center">
@@ -162,13 +167,3 @@ Distributed under the **MIT License** (as your other project).([GitHub][1])
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
----
-
-### Comentario adicional
-
-Este README conserva el enfoque minimalista del repositorio (únicamente un script Python con ejecución directa), pero le añade estructura profesional y bilingüe, muy útil si planeas presentarlo o compartirlo en contextos formales sin cambiar su esencia práctica.
-
-¿Quieres que lo adapte también para que quede en un estilo más "corporativo" como mencionaste antes?
-
-[1]: https://github.com/rojasarmando/random-list-music?utm_source=chatgpt.com "GitHub - rojasarmando/random-list-music"
-[2]: https://github.com/rojasarmando/random-list-music "GitHub - rojasarmando/random-list-music"
